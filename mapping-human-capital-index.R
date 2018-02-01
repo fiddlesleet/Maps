@@ -43,8 +43,7 @@ human_capital_countries
 
 # get world map countries
 world_map_countries <- map.world %>%
-  select(region) %>%
-  distinct()
+  distinct(region)
 # inspect
 world_map_countries
 
