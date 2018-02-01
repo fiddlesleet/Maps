@@ -44,8 +44,7 @@ human_capital_countries
 # get world map countries
 world_map_countries <- map.world %>%
   select(region) %>%
-  group_by(region) %>%
-  summarize(match = 1)
+  distinct()
 # inspect
 world_map_countries
 
